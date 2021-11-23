@@ -1,0 +1,11 @@
+.modal-window {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
