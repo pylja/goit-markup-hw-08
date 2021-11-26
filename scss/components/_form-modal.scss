@@ -1,7 +1,6 @@
 .form-modal {
     display: block;
-    /* margin: 40px; */
-   
+    
   }
   
   .modal-text {
@@ -9,9 +8,15 @@
   
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 1.15;
+    }
   
     color: #212121;
   }
@@ -63,6 +68,8 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
+
+   
   }
   
  
@@ -100,9 +107,14 @@
 
     &::placeholder {
       font-weight: normal;
-      font-size: 12px;
-      line-height: 1.17;
+      font-size: 14px;
+      line-height: 1.14;
       letter-spacing: 0.01em;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 12px;
+        line-height: 1.17;
+      }
     
       color: rgba(117, 117, 117, 0.5);
     }
@@ -131,10 +143,15 @@
     
   
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   
     margin-bottom: 30px;
 

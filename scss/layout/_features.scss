@@ -1,24 +1,83 @@
+
 .features {
+  @media screen and (min-width: 768px) {
     display: flex;
-    padding-left: 0px;
+    flex-wrap: wrap;
+    margin: -15px;
   }
   
- 
+}
+
+.features-list {
+  @media screen and (min-width: 768px) {
+   width: calc((100% - 4 * 15px) / 2);
+   margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+    
+   }
+}
+
+
   
-  .features-list {
+ .features-list:not(:last-child) {
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+   
+ }
+
+
+  .features-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    
+  }
+  
+  
+  
+  .features-text {
     margin-top: 0px;
     margin-bottom: 0px;
-    width: 270px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+  
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
   }
+
+
   
   .icon-delivery {
     display: block;
-    width: 270px;
+    max-width: 450px;
     height: 120px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+      height: 120px;
+    }
+
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -30,30 +89,4 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  
-  .features-title {
-    margin-top: 0px;
-    margin-bottom: 10px;
-  
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: var(--second-text-color);
-  }
-  
-  .features-title {
-    text-transform: uppercase;
-  }
-  
-  .features-text {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-  }
-  
+  }  
