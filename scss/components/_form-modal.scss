@@ -12,6 +12,11 @@
     text-align: center;
     letter-spacing: 0.03em;
 
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+      line-height: 1.15;
+    }
+
     @media screen and (min-width: 1200px) {
       font-weight: bold;
       font-size: 20px;
@@ -89,6 +94,10 @@
     
     height: 120px;
     width: 100%;
+
+    @media screen and (max-width: 480px) {
+      height: 60px;
+    }
   
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -177,8 +186,10 @@
   
   
   .button-modal-form {
+
     width: 200px;
     height: 50px;
+
   
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
