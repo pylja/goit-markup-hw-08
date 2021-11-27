@@ -2,6 +2,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
+
+    @media screen and (max-width: 479px) {
+      width: 96%;
+     
+    }
     
 
     @media screen and (min-width: 480px) {
@@ -10,8 +15,6 @@
     }
 
     
-   
-
     @media screen and (min-width: 1200px) {
       width: 528px;
       height: 581px;
